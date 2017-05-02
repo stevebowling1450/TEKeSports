@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "882597090800",
+    "firebase_url": "https://tekesports-c6095.firebaseio.com",
+    "project_id": "tekesports-c6095",
+    "storage_bucket": "tekesports-c6095.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882597090800:android:1fb6a79d4f690d8f",
+        "android_client_info": {
+          "package_name": "com.teky.tekesports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882597090800-hc8aesq1a5jotnauaen2t22fdkolho8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzJatUjBjV-LgrSpGkpztSQnj88_HAUok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882597090800:android:a6f1fd24a27b4e84",
+        "android_client_info": {
+          "package_name": "com.teky.tekesports.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882597090800-hc8aesq1a5jotnauaen2t22fdkolho8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzJatUjBjV-LgrSpGkpztSQnj88_HAUok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

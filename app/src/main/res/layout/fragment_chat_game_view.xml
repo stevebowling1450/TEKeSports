@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#444"
+    android:orientation="vertical"
+    app:layout_anchorGravity="bottom">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".15"
+        android:text="Chat"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".15"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/chat_box"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:focusable="true"
+            android:hint="Message"/>
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:text="Send"/>
+    </LinearLayout>
+
+</LinearLayout>
+

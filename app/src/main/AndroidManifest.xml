@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stveo.stevebowling.esports">
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teky.tekesports">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        >
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.teky.tekesports.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:hardwareAccelerated="false"
+            android:largeHeap="true"
+            />
+        <activity
+            android:name="com.teky.tekesports.LoginClass"
+            android:noHistory="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.teky.tekesports.SignupClass"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="70ab2cc60ce1dac9a72b03cf3ea0cf7ab94d6253"/>
     </application>
 
 </manifest>

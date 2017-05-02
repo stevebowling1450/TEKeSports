@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_background_2"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dota_2_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                />
+
+            <ImageView
+
+                android:id="@+id/cs_go_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/dota_2_image"
+                android:layout_margin="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/rocket_league_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hearthstone_image"
+                android:layout_margin="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/super_smash_bros_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/hearthstone_image"
+                android:layout_margin="15dp"
+                android:layout_toEndOf="@+id/rocket_league_image"
+                />
+
+            <ImageView
+                android:id="@+id/cod_advanced_warfare_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/super_smash_bros_image"
+                android:layout_margin="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/vain_glory_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/super_smash_bros_image"
+                android:layout_margin="15dp"
+                android:layout_toEndOf="@+id/cod_advanced_warfare_image"
+                />
+
+            <ImageView
+                android:id="@+id/clash_royale_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cod_advanced_warfare_image"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/fifa_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/vain_glory_image"
+                android:layout_margin="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/hearthstone_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/league_of_legends_image"
+                android:layout_margin="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/league_of_legends_image"
+                android:layout_width="150dp"
+                android:layout_height="225dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

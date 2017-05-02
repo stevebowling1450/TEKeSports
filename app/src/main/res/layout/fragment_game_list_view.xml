@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_background_2"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.teky.tekesports.Fragments.GameFragment">
+
+    <WebView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:visibility="gone">
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/single_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background_3"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/team_one_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_background_3"
+            >
+
+            <TextView
+                android:id="@+id/opponents_one"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/team_one_flag"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/team_one_flag"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/team_one_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBlue"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/team_two_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/team_one_item"
+            android:background="@drawable/item_background_3"
+            >
+
+            <TextView
+                android:id="@+id/opponents_two"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/team_two_flag"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/team_two_flag"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/team_two_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorOrange"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_game_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9">
+
+        <RelativeLayout
+            android:id="@+id/notStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/invalidMatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Participants Not Registered"
+                android:textAlignment="center"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/powered_by_toornament_light"
+        />
+</LinearLayout>

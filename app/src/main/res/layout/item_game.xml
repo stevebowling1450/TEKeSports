@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="game"
+            type="com.teky.tekesports.Model.Disciplines"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/item_background_3"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/game_icon"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_weight=".1"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter"
+            app:imageUrl="@{game.id}"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/game_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:text="@{game.name}"
+                android:textAlignment="gravity"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                app:setText="@{game.copyrights}"
+                android:textAlignment="gravity"
+                android:textColor="#ccffffff"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/game_fav"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight=".1"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            android:scaleX=".58"
+            android:scaleY="1.4"
+            app:isFaved="@{game.id}"/>
+    </LinearLayout>
+</layout>

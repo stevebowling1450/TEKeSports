@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/news"
+        android:title="News"
+        />
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/discipline"
+            android:title="Games">
+            <menu>
+                <item
+                    android:id="@+id/dota_2"
+                    android:icon="@drawable/dota2_icon"
+                    android:title="Dota 2"
+                    />
+                <item
+                    android:id="@+id/lol"
+                    android:icon="@drawable/leagueoflegends_icon"
+                    android:title="LoL"
+                    />
+                <item
+                    android:id="@+id/csgo"
+                    android:icon="@drawable/counterstrike_go_icon"
+                    android:title="CS:GO"
+                    />
+                <item
+                    android:id="@+id/hearthstone"
+                    android:icon="@drawable/hearthstone_icon"
+                    android:title="HearthStone"
+                    />
+                <item
+                    android:id="@+id/rocketleague"
+                    android:icon="@drawable/rocketleague_icon"
+                    android:title="Rocket League"
+                    />
+                <item
+                    android:id="@+id/smash_brothers"
+                    android:icon="@drawable/supersmashbros_icon"
+                    android:title="Smash Bros."
+                    />
+                <item
+                    android:id="@+id/advance_warfare"
+                    android:icon="@drawable/cod_advanced_warfare_icon"
+                    android:title="COD: AW"
+                    />
+                <item
+                    android:id="@+id/vainglory"
+                    android:icon="@drawable/vainglory_icon"
+                    android:title="Vain Glory"
+                    />
+                <item
+                    android:id="@+id/clash_royal"
+                    android:icon="@drawable/clash_royale_icon"
+                    android:title="Clash Royale"
+                    />
+                <item
+                    android:id="@+id/fifa_16"
+                    android:icon="@drawable/fifa16_icon"
+                    android:title="FIFA 16"
+                    />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/help"
+            android:title="Help">
+            <menu>
+                <item
+                    android:id="@+id/feedback"
+                    android:title="Feedback"
+                    />
+                <item
+                    android:id="@+id/settings"
+                    android:title="Settings"
+                    />
+                <item
+                    android:id="@+id/about"
+                    android:title="About"
+                    />
+                <item
+                    android:id="@+id/signout"
+                    android:title="Sign Out"
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>
